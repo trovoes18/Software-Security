@@ -10,7 +10,7 @@
 
 ## Steps to reproduce
 
-1. Do this
+1. reconnaissance 
 2. Do that
 3. ...
 N. Now something bad happened
