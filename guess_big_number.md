@@ -10,7 +10,7 @@
 
 ## Steps to reproduce
 
-1. reconnaissance 
+**1. reconnaissance **
 
 My first step was to understand how should I try to guess a number with 100000 possibilities in order to get the flag. Therefore, I visited the provided link (http://mustard.stt.rnl.tecnico.ulisboa.pt:22052/).
 
@@ -24,7 +24,7 @@ The result was an html page giving information about the target number. If the s
 
 
 
-2. Scripting
+**2. Scripting**
 
 Knowing the behavior of this challenge I did a small script that used the concept of a binary search. The idea was to reduce our interval as much as possible until we reach our target number.
 For a better understanding, I started my search with an interval between 0 and 100000 and the respective midpoint which is 50000.
