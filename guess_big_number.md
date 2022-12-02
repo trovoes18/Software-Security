@@ -10,7 +10,7 @@
 
 ## Steps to reproduce
 
-**1. reconnaissance **
+**1. reconnaissance**
 
 My first step was to understand how should I try to guess a number with 100000 possibilities in order to get the flag. Therefore, I visited the provided link (http://mustard.stt.rnl.tecnico.ulisboa.pt:22052/).
 
