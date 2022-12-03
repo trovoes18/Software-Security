@@ -16,6 +16,11 @@ In this challenge it was provided the code that the server was running and an `n
 From analysing the code, the goal was to obtain a `current` number equal to the `target` number. To ask for new numbers it was needed to provide the string `MORE`. Once the `current` number was equal to the `target` number it was necessary to provide the string `FINISH` to obtain the flag.
 
 So, to start I connected to the server using the `netcat` command (`nc mustard.stt.rnl.tecnico.ulisboa.pt 22055`) to interact with it and have a better understanding of the execution flow. However, after being connected to the server I notice that there was a timeout with the command which means that I couldn't use `netcat` to find the flag because I didn't have the appropriate time to do it.
+
+> [![screenshot][1]][1]
+
+  [1]: ./Images/pwn_tools_nc_attempts.jpg
+
 As the statement suggests one of the solutions was to use pwntools.
 
 
@@ -27,7 +32,9 @@ Initially, the script connects to the server over a raw socket. Then, the target
 After that, I run the python script and was able to obtain the flag.
 
 	`python pwntools_sockets.py`
+	
+> [![screenshot][2]][2]
 
-
+  [2]: ./Images/pwn_tools_flag.jpg
 
 [(POC)](./Code/pwntools_sockets.py)
