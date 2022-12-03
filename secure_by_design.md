@@ -17,10 +17,19 @@ At this point, I tried some common usernames like `adminstrator` or `admin` but 
 An interesting fact is that the website could detect that the `admin` user was fake because the response web page showed the message 
 `Welcome back fake-admin.
 Unfortunately our page is still under construction for non-admin users.`  
+
+> [![screenshot][1]][1]
+
+  [1]: ./Images/secure_by_design_merge.jpg
+
 Another interesting detail I found was that when the user was `admin` the server did not return the original base64 encoding which is `YWRtaW4K`, but another value.
 
 I also notice that after closing the tab and opening another one in the same session the information about the challenge was persisting.
 Then I inspected the page and found the `user` cookies that the server was using. The value of this cookie was encoded in base64.
+
+> [![screenshot][2]][2]
+
+  [2]: ./Images/secure_by_design_cookies.jpg
 
 Basically, every time someone entered their username a POST request was performed and the server was responsible for encoding the username in base64 and returning the cookie to the client. Then, a GET request to the server was performed using the cookies that the server have sent previously.  
 
@@ -34,5 +43,8 @@ After that, I run the python script and was able to retrieve the flag and the re
 
 	`python secure_by_design.py`
 
+> [![screenshot][3]][3]
+
+  [3]: ./Images/secure_by_design_flag.jpg
 
 [(POC)](./Code/secure_by_design.py)
