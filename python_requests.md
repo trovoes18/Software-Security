@@ -22,7 +22,9 @@ Basically, I should ask for numbers using http://mustard.stt.rnl.tecnico.ulisboa
 
 I played around with the challenge a bit to better understand the dynamics of the ctf. It was relatively easy to get the flag manually, however getting the flag through a script is more interesting and fun.
 
-	(SHOW IMAGE of http://mustard.stt.rnl.tecnico.ulisboa.pt:22053/more/finish)
+> [![screenshot][2]][2]
+
+  [2]: ./Images/python_requests_merge.jpg
 
 **2. Scripting**
 
@@ -33,7 +35,9 @@ After that, I run the python script and was able to retrieve the flag.
 
 	`python python_requests.py`
 
-	(SHOW IMAGE of flag)
+> [![screenshot][3]][3]
+
+  [3]: ./Images/python_requests_flag.jpg
 
 
 [(POC)](`python_requests.py`)
