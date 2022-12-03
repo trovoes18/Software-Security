@@ -13,7 +13,9 @@
 
 My first step was to access the link to the challenge (http://mustard.stt.rnl.tecnico.ulisboa.pt:22053/) where the rules of this ctf were being listed.
 
-	 (SHOW IMAGE of http://mustard.stt.rnl.tecnico.ulisboa.pt:22053/)
+> [![screenshot][1]][1]
+
+  [1]: ./Images/python_requests_rules.jpg
 
 
 Basically, I should ask for numbers using http://mustard.stt.rnl.tecnico.ulisboa.pt:22053/more until my current number was equal to my target number. Once that happened, I could access http://mustard.stt.rnl.tecnico.ulisboa.pt:22053/finish to retrieved the flag.
